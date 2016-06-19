@@ -43,3 +43,13 @@ Create File: docker-compose.yml
         volumes:
             - ./mysql/backup:/backup
             
+# Execute Command to start a new wordpress instance
+
+    docker-compose up
+
+If you are running this on Server with 512MBytes RAM, please use the following link to tune up the system before running, else the mysql server will keep crashing on you when loaded.
+
+    Step 01: Add swapfile
+        https://www.kuenn.co/how-to-ubuntu-add-swapfile/
+    Step 02: Reboot Server
+        # init 6
