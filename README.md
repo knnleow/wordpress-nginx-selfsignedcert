@@ -8,7 +8,7 @@ docker-wordpress-nginx-fpm-ssl. Database not included.
 Use the following docker-compose.yml for quick stand up wordpress with mysql 5.7.
 Create File: docker-compose.yml
 
-# docker-compose.yml
+## docker-compose.yml
 
     wordpress:
         image: knnleow/mynginxwordpress_args:1.1
@@ -43,7 +43,7 @@ Create File: docker-compose.yml
         volumes:
             - ./mysql/backup:/backup
             
-# Execute Command to start a new wordpress instance
+## Start a new wordpress instance
 
     docker-compose up
 
